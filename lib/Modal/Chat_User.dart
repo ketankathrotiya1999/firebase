@@ -22,15 +22,15 @@ late final String email;
 late final String PushToken;
 
 ChatUser.fromJson(Map<String,dynamic>json){
-  image=json['image'];
-  about=json['about'];
-  about=json['name'];
-  createdAt=json['createdAt'];
-  isOnline=json['isOnline'];
-  id=json['id'];
-  lastActive=json['lastActive'];
-  email=json['email'];
-  PushToken=json['PushToken'];
+  image=json['image']??'';
+  about=json['about']??'';
+  about=json['name']??'';
+  createdAt=json['createdAt']??'';
+  isOnline=json['isOnline']??'';
+  id=json['id']??'';
+  lastActive=json['lastActive']??'';
+  email=json['email']??'';
+  PushToken=json['PushToken']??'';
 
 }
 

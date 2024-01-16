@@ -49,14 +49,22 @@ class HomePage extends StatelessWidget {
            list= data?.map((e) => ChatUser.fromJson(e.data())).toList()??[];
 
           }
-          return ListView.builder(
-              padding: EdgeInsets.only(top: mq.height*0.02),
-              physics: BouncingScrollPhysics(),
-              itemCount: 10,
-              itemBuilder: (context,index){
-                return ChatUserCard();
-              }
-              );
+       if(list.isNotEmpty){
+         return ListView.builder(
+             padding: EdgeInsets.only(top: mq.height*0.02),
+             physics: BouncingScrollPhysics(),
+             itemCount: 10,
+             itemBuilder: (context,index){
+               return ChatUserCard(
+                 user: list[index],
+               );
+             }
+         );
+       }
+       else{
+         return Center(child: Text('No Connection Found!',style: TextStyle(fontSize: 20),));
+
+       }
         },
       ),
     );
