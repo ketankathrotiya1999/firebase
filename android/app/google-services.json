@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "794617549567",
+    "project_id": "fir-miner-8fada",
+    "storage_bucket": "fir-miner-8fada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794617549567:android:6a96de939d85b2f5e232ca",
+        "android_client_info": {
+          "package_name": "com.take.firebase_miner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794617549567-en7eqeuf6utgk55vmo2iug5muk2djue8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.take.firebase_miner",
+            "certificate_hash": "f71872308edcb45c3d12c77a758f37a004341f50"
+          }
+        },
+        {
+          "client_id": "794617549567-arkaaequip34dgnd8dcamflpj267io2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPvRgbcQbbevA4VX3T4WQptuC2GxSDi2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794617549567-arkaaequip34dgnd8dcamflpj267io2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
