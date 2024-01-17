@@ -27,9 +27,9 @@ class _ChatUserCardState extends State<ChatUserCard> {
             radius: 20,
             child: Icon(CupertinoIcons.person),
           ),
-          title: Text(widget.user.name),
+          title: Text(widget.user.name!),
           subtitle: Text(
-            widget.user.about,
+            widget.user.about!,
             maxLines: 1,
           ),
           trailing: Text('12:00 PM', style: TextStyle(color: Colors.black54)),

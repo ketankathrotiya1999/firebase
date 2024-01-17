@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.pop(context);
       log('User:${user?.user}');
       log('UserAdditionalInfo:$user');
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=> HomePage() ));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=> HomeScreen() ));
     } );
   }
   Future<UserCredential?> sighWithGoogle() async{

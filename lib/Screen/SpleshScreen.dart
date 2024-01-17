@@ -1,16 +1,12 @@
 
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_miner/Screen/home.dart';
 import 'package:firebase_miner/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import '../Api/Apis.dart';
 import '../Auth/login_Screen.dart';
-import '../all/ChatMessage.dart';
-import '../all/ChatProvider.dart';
 
 class SpleshScreen extends StatefulWidget {
   @override
@@ -26,7 +22,7 @@ class _SpleshScreenState extends State<SpleshScreen> {
       seconds: 3
     ),(){
       if(Apis.auth.currentUser != null){
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>HomePage()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>HomeScreen()));
       }
       else{Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>LoginScreen()));}
 

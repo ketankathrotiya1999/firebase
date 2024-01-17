@@ -5,10 +5,9 @@ import 'package:google_sign_in/google_sign_in.dart';
 import '../Api/Apis.dart';
 import '../Modal/Chat_User.dart';
 import '../main.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 
-class HomePage extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
    List<ChatUser> list=[];
   @override
   Widget build(BuildContext context) {

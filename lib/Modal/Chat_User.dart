@@ -1,4 +1,5 @@
 class ChatUser{
+
   ChatUser ({
     required this.image,
     required this.about,
@@ -11,19 +12,19 @@ class ChatUser{
     required this.PushToken,
 
 });
-late final String image;
-late final String about;
-late final String name;
-late final String createdAt;
-late final String isOnline;
-late final String id;
-late final String lastActive;
-late final String email;
-late final String PushToken;
+  String? image;
+  String? about;
+  String? name;
+  String? createdAt;
+  String? isOnline;
+  String? id;
+  String? lastActive;
+  String? email;
+  String? PushToken;
 
 ChatUser.fromJson(Map<String,dynamic>json){
+  about = json['about'] ?? '';
   image=json['image']??'';
-  about=json['about']??'';
   about=json['name']??'';
   createdAt=json['createdAt']??'';
   isOnline=json['isOnline']??'';
